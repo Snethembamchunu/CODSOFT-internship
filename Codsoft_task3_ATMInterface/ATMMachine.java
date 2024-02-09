@@ -58,6 +58,14 @@ public class ATMMachine{
                 if (goBack != 'Y' && goBack != 'y') {
                     continueProcessing = false;
                 }
+
+                if (goBack != 'Y') {
+                    System.out.println("Exiting the application...");
+                    scanner.close();
+                    System.exit(0); // Exits the application
+                }
+
+        
         }
     }
 }
